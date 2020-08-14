@@ -76,6 +76,8 @@ incompatibility, re-export the frozen inference graph to obtain a new
 ```
 python tools/freeze_model.py
 ```
+For a TF2 version use tools/generate_detections_tf2.py (tested with TF 2.2).
+
 The ``generate_detections.py`` stores for each sequence of the MOT16 dataset
 a separate binary file in NumPy native format. Each file contains an array of
 shape `Nx138`, where N is the number of detections in the corresponding MOT
